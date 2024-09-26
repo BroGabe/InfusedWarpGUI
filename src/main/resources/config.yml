@@ -1,0 +1,12 @@
+menu-name: '&8Infused Warp Menu'
+sounds: true
+
+warps:
+  koth:
+    name: '&5&lWARPS &8>> &dKoth'
+    material: 'DIAMOND_SWORD'
+    texture: ''
+    data: 0
+    lore:
+      - ''
+      - '&7&oClick to warp!'

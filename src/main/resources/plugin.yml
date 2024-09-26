@@ -1,0 +1,5 @@
+name: InfusedWarpGUI
+version: '${project.version}'
+depend:
+  - Essentials
+main: com.thedev.infusedwarpgui.InfusedWarpGUI
