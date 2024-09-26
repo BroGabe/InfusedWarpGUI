@@ -3,6 +3,7 @@ package com.thedev.infusedwarpgui.menus;
 import com.earth2me.essentials.Essentials;
 import com.thedev.infusedwarpgui.InfusedWarpGUI;
 import com.thedev.infusedwarpgui.utils.ColorUtil;
+import com.thedev.infusedwarpgui.utils.EssentialsUtils;
 import com.thedev.infusedwarpgui.utils.ItemBuilder;
 import com.thedev.infusedwarpgui.utils.WarpItem;
 import dev.triumphteam.gui.guis.Gui;
@@ -59,7 +60,7 @@ public class WarpMenu {
         Essentials essentials = plugin.getEssentials();
 
         for(String warpName : plugin.getConfig().getConfigurationSection("warps").getKeys(false)) {
-            if(!essentials.getWarps().isWarp(warpName)) continue;
+            if(!EssentialsUtils.isWarp(warpName)) continue;
 
             ItemStack warpItem = WarpItem.getWarpItem(warpName);
 
